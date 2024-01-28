@@ -1,0 +1,13 @@
+/* hand sim gen */
+
+.hs-output {
+    font-size: larger;
+    font-weight: bold;
+}
+#hs-list-container {
+    display: none;
+    justify-content: center;
+}
+#hs-list-container > fieldset {
+    flex: 1;
+}

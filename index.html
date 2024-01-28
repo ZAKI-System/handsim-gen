@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content=""> -->
+    <!-- <meta name="keywords" content=""> -->
+    <title>ハンドシミュレーターでしばく ジェネレータ</title>
+    <link rel="icon" href="/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./handsim.css">
+    <!-- Script -->
+    <!-- <script src="/js/check-ie.js"></script> -->
+    <script src="./handsim.js"></script>
+</head>
+<body>
+    <h1>ハンドシミュレーターでしばく</h1>
+    <p>ジェネレータ</p>
+    <p>VRChatユーザーのBATAKSがなんちゃら</p>
+    <fieldset>
+        <legend>ここに出るよ</legend>
+        <div class="hs-output">
+            <span id="hs-o1">ハンド</span><span>シミュレーターで</span><span id="hs-o2">しばく</span>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>生成オプション</legend>
+        <div>
+            <button type="button" id="hs-run">生成</button>
+        </div>
+        <ul>
+            <li><input type="checkbox" name="hs-opt-mix" id="hs-opt-mix"><label for="hs-opt-mix">左右のリストを混ぜる</label></li>
+            <li><input type="checkbox" name="hs-opt-dup" id="hs-opt-dup"><label for="hs-opt-dup">左右で単語の重複を許可する</label></li>
+        </ul>
+        <p></p>
+    </fieldset>
+    <fieldset>
+        <legend>単語リスト <button type="button" id="hs-list-button">開閉</button></legend>
+        <div>(仮)</div>
+        <div id="hs-list-container">
+            <fieldset>
+                <legend>左</legend>
+                <ul id="hs-list-left"></ul>
+            </fieldset>
+            <fieldset>
+                <legend>右</legend>
+                <ul id="hs-list-right"></ul>
+            </fieldset>
+        </div>
+    </fieldset>
+    <div>
+        <p>超手抜き工事<br>2024-01-27</p>
+    </div>
+</body>
+</html>
